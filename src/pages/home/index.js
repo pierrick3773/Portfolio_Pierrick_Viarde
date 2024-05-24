@@ -12,7 +12,7 @@ import {
   services,
 } from "../../content_option";
 import { About } from "../about";
-import bgImage from "../../assets/images/fotor-ai-2024052192112.jpg"; // importer l'image
+import bgImage from "../../assets/images/getimg_ai-2024-05-24T15_50_41.537Z.png" // importer l'image
 
 export const Home = () => {
   return (
@@ -25,7 +25,8 @@ export const Home = () => {
         </Helmet>
         <div
           className="intro_sec d-block d-lg-flex align-items-center "
-          style={{ backgroundImage: `url(${bgImage})` }} // utiliser l'image dans le style inline
+          style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundRepeat: 'round' }}
+
         >
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
