@@ -12,7 +12,7 @@ import {
   services,
 } from "../../content_option";
 import { About } from "../about";
-import bgImage from "../../assets/images/getimg_ai-2024-05-24T15_50_41.537Z.png" // importer l'image
+import bgImage from "../../assets/images/204646.png" // importer l'image
 
 export const Home = () => {
   return (
