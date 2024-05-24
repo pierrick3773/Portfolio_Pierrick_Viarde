@@ -6,9 +6,9 @@ import {
   dataabout,
   meta,
   worktimeline,
-  skills,
   services,
 } from "../../content_option";
+
 
 export const About = () => {
   return (
@@ -59,25 +59,7 @@ export const About = () => {
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
-          <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </Col>
+          {/* balise de fermeture </Col> supprimée ici */}
         </Row>
         <Row className="sec_sp">
           <Col lang="5">

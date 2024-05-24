@@ -1,22 +1,22 @@
-const logotext = "JOHN";
+const logotext = "P.V";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Pierrick Viarde",
+    description: "Bonjourn Pierrick Viarde développeur web frontend",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "Je suis Pierrick Viarde",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "j'aime coder",
+        second: "j'aime créer",
+        third: "développeur web frontend",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Développeur web frontend passioné ",
+    your_img_url: "https://photos.app.goo.gl/bke5gDvSb55fokd66",
 };
 
 const dataabout = {
-    title: "abit about my self",
+    title: "à propos de moi",
     aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
 };
 const worktimeline = [{
@@ -36,27 +36,7 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
-];
+
 
 const services = [{
         title: "UI & UX Design",
@@ -157,7 +137,6 @@ export {
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
     services,
     introdata,
     contactConfig,
