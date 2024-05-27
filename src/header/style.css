@@ -18,8 +18,8 @@
 .menu__button svg {
     width: 2em;
     height: 2em;
-    fill: var(--text-color-2);
-    color: var(--text-color-2);
+    fill: #e77d22;
+    color: #e77d22;
 }
 
 .nav_ac {
@@ -34,6 +34,9 @@
     height: 50px;
     font-weight: bold;
     z-index: 1000;
+}
+.navbar-brand{
+    color: #e77d22;
 }
 
 .nav_ac:hover {
