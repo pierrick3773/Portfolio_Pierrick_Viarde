@@ -1,3 +1,7 @@
+.col-lg-5{
+    width: 100%;
+}
+
 section {
     flex: 1 0 auto;
     position: relative;
