@@ -5,15 +5,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   dataabout,
   meta,
-  worktimeline,
   services,
 } from "../../content_option";
-
+import Skills from '../../components/skills/skills'
 
 export const About = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
+        
         <Helmet>
           <meta charSet="utf-8" />
           <title> About | {meta.title}</title>
@@ -27,6 +27,12 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
+            <h3 className="color_sec py-4">Skills</h3>
+            <Skills />
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
@@ -35,34 +41,8 @@ export const About = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </Col>
-        </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
-          </Col>
-          {/* balise de fermeture </Col> supprimée ici */}
-        </Row>
-        <Row className="sec_sp">
-          <Col lang="5">
             <h3 className="color_sec py-4">services</h3>
           </Col>
           <Col lg="7">
