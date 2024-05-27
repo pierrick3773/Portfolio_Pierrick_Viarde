@@ -49,6 +49,8 @@
     justify-content: center;
     padding: 2rem 1rem;
     transition: 300ms ease-in-out;
+    background-color: rgb(33, 33, 33);
+    box-shadow: #e77d22 0px 0px 30px;
 }
 
 .skill--box:hover  {
