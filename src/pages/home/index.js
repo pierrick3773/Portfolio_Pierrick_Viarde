@@ -12,6 +12,8 @@ import {
   services,
 } from "../../content_option";
 import { About } from "../about";
+import { Portfolio } from "../portfolio";
+import { ContactUs } from "../contact";
 import bgImage from "../../assets/images/204646.png";
 import bgImageSmall from "../../assets/images/fotor-ai-2024052192112.jpg";
 
@@ -83,6 +85,8 @@ export const Home = () => {
           </div>
         </div>
         <About />
+        <Portfolio/>
+        <ContactUs/>
       </section>
     </HelmetProvider>
   );
