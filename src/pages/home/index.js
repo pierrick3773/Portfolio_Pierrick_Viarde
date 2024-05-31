@@ -12,11 +12,21 @@ import {
   services,
 } from "../../content_option";
 import { About } from "../about";
-import bgImage from "../../assets/images/204646.png" // importer l'image
+import bgImage from "../../assets/images/204646.png";
+import bgImageSmall from "../../assets/images/fotor-ai-2024052192112.jpg";
 
 export const Home = () => {
   return (
     <HelmetProvider>
+      <style>
+        {`
+          @media (max-width: 900px) {
+            .intro_sec {
+              background-image: url(${bgImageSmall});
+            }
+          }
+        `}
+      </style>
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
@@ -24,9 +34,12 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div
-          className="intro_sec d-block d-lg-flex align-items-center "
-          style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundRepeat: 'round' }}
-
+          className="intro_sec d-block d-lg-flex align-items-center"
+          style={{
+            backgroundImage: `url(${bgImage})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'round'
+          }}
         >
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
