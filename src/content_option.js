@@ -1,3 +1,6 @@
+import OhMyFood from './assets/images/2024-05-31 121901.png';
+
+
 const logotext = "P.V";
 const meta = {
     title: "Pierrick Viarde",
@@ -7,9 +10,9 @@ const meta = {
 const introdata = {
     title: "Je suis Pierrick Viarde",
     animated: {
-        first: "j'aime coder",
+        first: "développeur web frontend",
         second: "j'aime créer",
-        third: "développeur web frontend",
+        third: "j'aime coder",
     },
     description: "Développeur web frontend passioné ",
     your_img_url: "https://photos.app.goo.gl/bke5gDvSb55fokd66",
@@ -39,9 +42,9 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
+        img: OhMyFood,
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "https://ohmyfood8956.netlify.app/",
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
