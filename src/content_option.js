@@ -105,7 +105,7 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "pviarde@gmai.com",
+    YOUR_EMAIL: "pviarde@gmail.com",
     YOUR_FONE: "0769047307",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 

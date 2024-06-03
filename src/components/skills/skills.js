@@ -21,9 +21,7 @@ import './skills.css'
 
     return (
         <div id ="skills"className="skills" >
-            <div className="skillsHeader">
-                
-            </div>
+           
             <div className="skillsContainer">
                 <div className="skill--scroll">
                     <Marquee 

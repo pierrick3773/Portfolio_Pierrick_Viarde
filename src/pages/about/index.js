@@ -36,7 +36,7 @@ export const About = () => {
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <div>
+            <div className="about-txt">
               <p>{dataabout.aboutme}</p>
             </div>
           </Col>
