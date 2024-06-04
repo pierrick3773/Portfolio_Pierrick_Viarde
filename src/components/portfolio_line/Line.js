@@ -10,11 +10,15 @@ export function PortfolioLine () {
       {dataportfolio.map((data, index) => (
         <div className="Line-desktop" key={index}>
           <a href={data.link} className='portfolio-link'>
-            <img className="desktop" src={DesktopImg} alt="Desktop" />
-            <img className="capture-desktop" src={data.captureDesktop} alt="Capture d'écran" />
+            <div className="desktop-container">
+              <img className="desktop" src={DesktopImg} alt="Desktop" />
+              <img className="capture-desktop" src={data.captureDesktop} alt="Capture d'écran" />
+            </div>
             <p className='descrition'>{data.description}</p>
-            <img className="smartphone" src={SmartphoneImg} alt="Smartphone" />
-            <img className="capture-smartphone" src={data.captureSmartphone} alt="Capture d'écran" />
+            <div className="smartphone-container">
+              <img className="smartphone" src={SmartphoneImg} alt="Smartphone" />
+              <img className="capture-smartphone" src={data.captureSmartphone} alt="Capture d'écran" />
+            </div>
           </a>
           
         </div>
