@@ -3,7 +3,7 @@ import './style.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container, Row, Col } from 'react-bootstrap';
 import { dataportfolio, meta } from '../../content_option';
-import { PortfolioLine } from '../../components/portfolio_line/Line'; 
+import { PortfolioLine } from '../../components/portfolio_line/Line'; // Importez la fonction PortfolioLine
 
 export const Portfolio = () => {
   return (
@@ -11,7 +11,7 @@ export const Portfolio = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title  >Portfolio | {meta.title}</title>
+          <title>Portfolio | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
@@ -20,8 +20,8 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="Portfolio">
-          <PortfolioLine /> 
+        <div >
+          <PortfolioLine /> {/* Appelez la fonction PortfolioLine comme un composant */}
         </div>
       </Container>
     </HelmetProvider>
