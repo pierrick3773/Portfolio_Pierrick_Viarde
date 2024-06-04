@@ -1,0 +1,15 @@
+.Line{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .Line a {
+  width: 30%;
+}
+
+.Line p {
+  width: 30%;
+} */
