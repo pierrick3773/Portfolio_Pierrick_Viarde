@@ -4,31 +4,47 @@ import './Line.css';
 import { dataportfolio } from '../../content_option';
 import gitLogo from '../../assets/images/gitLogo.svg'
 import wwwlogo from '../../assets/images/internetLogo.svg'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export function PortfolioLine () {
-  const [isVisible, setIsVisible] = useState(false);
+  const refs = useRef([]);
+  const [isVisible, setIsVisible] = useState(new Array(dataportfolio.length).fill(false));
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = refs.current.indexOf(entry.target);
+          if (index !== -1) {
+            setIsVisible((prevState) => {
+              const newState = [...prevState];
+              newState[index] = entry.isIntersecting;
+              return newState;
+            });
+          }
+        });
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
-    observer.observe(document.querySelector('.Line'));
+    const lineDesktops = document.querySelectorAll('.Line-desktop');
+    lineDesktops.forEach((lineDesktop, index) => {
+      refs.current[index] = lineDesktop;
+      observer.observe(lineDesktop);
+    });
     return () => {
-      observer.unobserve(document.querySelector('.Line'));
+      lineDesktops.forEach((lineDesktop, index) => {
+        observer.unobserve(lineDesktop);
+      });
     };
   }, []);
 
   return (
     <>
-      <div className="Line" data-visible={isVisible}>
+      <div className="Line">
         {dataportfolio.map((data, index) => (
-          <div className="Line-desktop" key={index}>
-            <div href={data.link} className='portfolio-link'>
-              <div className={`desktop-container ${isVisible ? 'start-animation' : ''}`}>
+          <div ref={refs[index]} className="Line-desktop" key={index}>
+            <div className='portfolio-link'>
+              <div className={`desktop-container ${isVisible[index] ? 'start-animation' : 'end-animation'}`}>
                 <img className="desktop" src={DesktopImg} alt="Desktop" />
                 <img className="capture-desktop" src={data.captureDesktop} alt="Capture d'écran" />
               </div>
@@ -37,11 +53,17 @@ export function PortfolioLine () {
                 <p className='descrition'>{data.description}</p>
                 <p className='descrition'>{data.responsive}</p>
                 <div className='links'>
-                  <a href={data.link} target="_blank"> <img className='wlogo' src={wwwlogo}/></a>
-                  <a href={data.gitLink} target="_blank"> <img className='git-logo' src={gitLogo}/></a>
+                  {data.link && (
+                    <a href={data.link} target="_blank">
+                      <img className='wlogo' src={wwwlogo}/>
+                    </a>
+                  )}
+                  <a href={data.gitLink} target="_blank">
+                    <img className='git-logo' src={gitLogo}/>
+                  </a>
                 </div>
               </div>
-              <div className={`smartphone-container ${isVisible ? 'start-animation' : ''}`}>
+              <div className={`smartphone-container ${isVisible[index] ? 'start-animation' : 'end-animation'}`}>
                 <img className="smartphone" src={SmartphoneImg} alt="Smartphone" />
                 <img className="capture-smartphone" src={data.captureSmartphone} alt="Capture d'écran" />
               </div>

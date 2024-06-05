@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  padding-bottom: 40px;
 }
 
 .Line-desktop:nth-child(even) {
@@ -19,9 +20,16 @@
   width: 11%;
 }
 .wlogo{
-  width: 30%;
+  width: 11%;
+  margin-right: 50px;
   
 }
+.Line-desktop:hover .wlogo,
+.Line-desktop:hover .git-logo {
+  transform: scale(1.8); /* Ajuster la valeur pour plus ou moins de grossissement */
+  transition: transform 1.2s ease-in-out; /* Ajouter une transition pour un effet plus fluide */
+}
+
 .Line-desktop {
   width: 85%;
   border-radius: 10px; /* Ajouter cette ligne pour arrondir les coins */
@@ -115,8 +123,11 @@
 }
 
 .links{
-  display: flex;
-  flex-direction: row;
+  
   text-align: center;
-  justify-content: center;
+  
+}
+
+.links a{
+  text-decoration: none;
 }

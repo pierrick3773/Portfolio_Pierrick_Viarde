@@ -2,7 +2,8 @@ import OhMyFood from './assets/images/2024-05-31 121901.webp';
 import OhMyFoodSmartphone from './assets/images/OhMyFoodSmart.webp';
 import Kasa from './assets/images/kasa-desktop.webp';
 import KasaSmart from './assets/images/kasa-smart.webp';
-
+import buel from './assets/images/buel-desktop.webp';
+import buelSmart from './assets/images/buel-smart.webp';
 const logotext = "P.V";
 const meta = {
     title: "Pierrick Viarde",
@@ -29,37 +30,37 @@ const dataabout = {
 
 
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-];
+
 
 const dataportfolio = [{
     id: 1,
     title: "OhMyFood",
     captureDesktop: OhMyFood,
     captureSmartphone: OhMyFoodSmartphone, 
-    description: "Projet d'étude réalisé en HTML et Sass. Réalisé pour travailler le principe d'animation et l'interactivité avec les utilisateurs.",
+    description: "Projet d'étude réalisé avec HTML et Sass. Réalisé pour travailler le principe d'animation et l'interactivité avec les utilisateurs.",
     responsive: "Desktop / Tablette / Smartphone",
+    link: "https://ohmyfood8956.netlify.app/",
     gitLink : "https://github.com/pierrick3773/oh_my_food.git"
 },
 {
-    id: 1,
+    id: 2,
     title: "Kasa",
     captureDesktop: Kasa,
     captureSmartphone: KasaSmart, 
-    description: "Projet d'étude réalisé en HTML et Sass. Réalisé pour travailler le principe d'animation et l'interactivité avec les utilisateurs.",
+    description: "Projet d'étude réalisé avec React et Sass. Réalisé pour travailler la logique de composants",
     responsive: "Desktop / Tablette / Smartphone",
-    gitLink : "https://github.com/pierrick3773/oh_my_food.git"
+    link: "https://kasapierrickviarde.netlify.app/",
+    gitLink : "https://github.com/pierrick3773/Kasa.git"
+},
+{
+    id: 3,
+    title: "Sophie Buel",
+    captureDesktop: buel,
+    captureSmartphone: buelSmart, 
+    description: "Projet d'étude réalisé avec JavaScript et CSS. Réalisé pour travailler sur JavaScript et la communication avec le Backend.",
+    responsive: "Desktop / Tablette / Smartphone",
+    
+    gitLink : "https://github.com/pierrick3773/Kasa.git"
 },
    
 ];
@@ -86,7 +87,7 @@ export {
     dataabout,
     dataportfolio,
    
-    services,
+   
     introdata,
     contactConfig,
     socialprofils,
