@@ -62,10 +62,10 @@
 
 @media (min-width: 992px) and (max-width: 1380px) {
     .skills {
-        padding: 2rem 1rem 1rem 1rem;
+        
     }
     .skillsContainer {
-        padding: 1.5rem;
+        
         margin-top: 1.5rem;
     }
 }
@@ -73,11 +73,11 @@
 
 @media screen and (max-width: 992px) {
     .skills {
-        padding: 1rem;
+        
         min-height: 100%;
     }
     .skillsContainer {
-        padding: 1rem;
+        
         margin: 1rem 0;
     }
     .skillsHeader h2 {
@@ -104,10 +104,10 @@
 
 @media screen and (max-width: 800px) {
     .skills {
-        padding: 0.5rem;
+       
     }
     .skillsContainer {
-        padding: 0.5rem;
+        
     }
     .skillsHeader h2 {
         font-size: 3rem;

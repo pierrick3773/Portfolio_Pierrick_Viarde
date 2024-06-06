@@ -23,7 +23,7 @@ const introdata = {
 
 const dataabout = {
     title: "à propos de moi",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "J AIME PAS LES CONS ET JE SUIS INSOMNIAQUE ALORS JE REPOND A 3H DU MAT    !!!!!!!!!",
 };
 
     
@@ -68,7 +68,7 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "pviarde@gmail.com",
     YOUR_FONE: "0769047307",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    description: "",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_az7amdh",
@@ -77,9 +77,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    github: "https://github.com/pierrick3773",
     facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/pierrick-viarde/",
     twitter: "https://twitter.com",
 };
 export {
