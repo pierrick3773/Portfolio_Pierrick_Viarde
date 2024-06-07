@@ -1,5 +1,6 @@
-
-
+.rfm-child{
+    padding: 30px;
+}
 
 .skillsContainer {
     display: flex;
