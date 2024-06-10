@@ -132,3 +132,20 @@
 .links a{
   text-decoration: none;
 }
+
+@media only screen and (max-width: 991px) {
+
+  .desktop-container{
+    display: none;
+  }
+  .portfolio-link{
+    display: flex;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .portfolio-link{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

@@ -116,3 +116,14 @@
         transform: translateZ(0);
     }
 }
+
+@media (max-width:991.98px) {
+    .col-lg-8, .col-lg-7, .about-txt{
+        padding-left: 20px;
+        width: 100%;
+}
+
+    .py-4 {
+        padding-left: 20px;
+    }
+}

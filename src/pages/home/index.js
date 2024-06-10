@@ -42,6 +42,7 @@ export const Home = () => {
             backgroundRepeat: 'round'
           }}
         >
+        
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
