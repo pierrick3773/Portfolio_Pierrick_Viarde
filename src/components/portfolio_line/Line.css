@@ -34,6 +34,7 @@
   width: 85%;
   border-radius: 10px; /* Ajouter cette ligne pour arrondir les coins */
   box-shadow: 0 4px 6px -1px #e77d22, 0 2px 4px -1px #e77d22; /* Ajouter cette ligne pour créer l'effet de vignette */
+  overflow: hidden;
 }
 .portfolio-link{
   display: grid;
