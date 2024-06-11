@@ -259,6 +259,7 @@ section {
     .ac_btn{
         height: 30px;
         margin-right: 0px;
+        font-size: x-small;
     }
     .intro_sec .text h2 {
         font-size: 17px;
