@@ -126,6 +126,7 @@
 .links{
   
   text-align: center;
+  padding-bottom: 15px;
   
 }
 
@@ -147,5 +148,18 @@
   .portfolio-link{
     display: flex;
     flex-direction: column-reverse;
+  }
+  .capture-smartphone {
+    width: 37%;
+    padding-right: 2px;
+  }
+  .smartphone{
+    width: 50%;
+  }
+  .smartphone-container.start-animation{
+    padding-top: 8px;
+  }
+  .descrition{
+    font-size: medium;
   }
 }
