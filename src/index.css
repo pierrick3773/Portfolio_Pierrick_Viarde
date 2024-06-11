@@ -111,5 +111,7 @@ code {
 }
 
 @media (max-width: 900px) {
-    
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }

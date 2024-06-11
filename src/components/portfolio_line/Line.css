@@ -142,6 +142,9 @@
   .portfolio-link{
     display: flex;
   }
+  .Line-desktop {
+    width: 97%;
+  }
 }
 
 @media only screen and (max-width : 768px) {

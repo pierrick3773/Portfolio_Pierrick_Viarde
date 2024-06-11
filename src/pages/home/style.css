@@ -49,18 +49,20 @@ section {
 @media (max-width:991.98px) {
     .intro_sec {
         display: block;
-        height: auto!important;
+        
     }
 
-    /* .image-desktop{
-        display: none;
-    } */
-    /* .image-responsive{
-        height: calc(100vh - 60px);
-      
-        height: 100vh;
-        margin-top: -60px;
-    } */
+.mb-1x{
+    padding-top: 0px;
+    margin-bottom: 0px;
+   }
+
+   .align-self-center{
+    height: 210px;
+   }
+   .mx-auto {
+    padding-top: 40px;
+   }
 }
 
 .intro_sec .text,
@@ -84,12 +86,26 @@ section {
     .intro_sec .intro {
         max-width: 700px;
         padding-left: 20px;
-        padding-right: 20px;
+        
+        height: 210px;
+    }
+    .description-dev{
+        display: none;
+    }
+
+    .intro_btn-action{
+        display: flex;
+        flex-direction: row;
+        padding-top: 59px;
+        width: 100%;
+    }
+
+    .ac_btn{
+        height: 55px;
+        margin-right: 0px;
     }
 }
-.mb-1x{
-    padding-top: 40px;
-}
+
 .intro_sec .intro .feature .wrap-icon {
     background: 0 0!important;
     width: auto;
@@ -102,8 +118,8 @@ section {
 }
 
 .intro_sec .text h1 {
-    font-size: 30px;
-    margin-bottom: 50px;
+    font-size: 15px;
+  
     font-weight: 700;
 }
 
@@ -111,7 +127,13 @@ section {
     font-size: 16px;
     font-weight: 700;
 }
+.intro_sec .text h2 {
+    font-size: 17px;
+}
 
+.mb-1x p{
+    display: none;
+}
 .intro_sec .h_bg-image {
     background-size: cover;
     background-position: center;
@@ -230,7 +252,10 @@ section {
     .container{
         bs-gutter-x: 0px;
     }
-    
+    .intro_sec{
+        height: 210px;
+        min-height: 0px;
+    }
 }
 
 .intro_sec .h_bg-image .block .wrap-icon {

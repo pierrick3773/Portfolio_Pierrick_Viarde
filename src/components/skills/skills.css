@@ -109,12 +109,13 @@
         .skills-responsive{
             display: flex;
             width: 100%;
+            padding-left: 14px;
         }
         .skill--box {
-            padding-left: 3px;
-            width: 90px;
-            height: 86px;
+            width: 40%;
+            height: 96px;
             padding: 9px;
+            margin: 7px;
     }
     .skillsContainer {
         display: none;
