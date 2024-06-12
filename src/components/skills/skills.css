@@ -102,6 +102,9 @@
         font-size: 20px;
         margin-top: 1rem;
     }
+    .skill--box:hover  {
+        transform: none
+    }
 
 }
 

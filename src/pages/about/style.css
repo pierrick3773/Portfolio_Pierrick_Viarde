@@ -21,7 +21,8 @@
     padding-left: 80px;
 }
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: calc(3rem + 5.128vw);
+    padding-bottom: 80px;
 }
 
 .table td,
