@@ -24,10 +24,25 @@
   margin-right: 50px;
   
 }
-.Line-desktop:hover .wlogo,
+.Line-desktop:hover .wlogo {
+  animation: rebond-lent 0.8s infinite alternate;
+}
+
 .Line-desktop:hover .git-logo {
-  transform: scale(1.8); /* Ajuster la valeur pour plus ou moins de grossissement */
-  transition: transform 1.2s ease-in-out; /* Ajouter une transition pour un effet plus fluide */
+  animation: rebond-lent 0.8s infinite alternate;
+  animation-delay: 0.4s;
+}
+
+@keyframes rebond-lent {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .Line-desktop {
@@ -36,6 +51,11 @@
   box-shadow: 0 4px 6px -1px #e77d22, 0 2px 4px -1px #e77d22; /* Ajouter cette ligne pour créer l'effet de vignette */
   overflow: hidden;
 }
+.Line-desktop:hover {
+  transform: scale(1.05); 
+  transition: transform 1.2s
+}
+
 .portfolio-link{
   display: grid;
   grid-template-columns: repeat(3, 1fr);

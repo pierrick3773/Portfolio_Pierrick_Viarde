@@ -84,11 +84,15 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <div id="about">
         <About />
-        <div id="portfolio"></div>
+        </div>
+        <div id="portfolio">
         <Portfolio />
-        <div id="contact"></div>
+        </div>
+        <div id="contact">
         <ContactUs />
+        </div>
       </section>
     </HelmetProvider>
   );

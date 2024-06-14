@@ -4,6 +4,10 @@ import Kasa from './assets/images/kasa-desktop.webp';
 import KasaSmart from './assets/images/kasa-smart.webp';
 import buel from './assets/images/buel-desktop.webp';
 import buelSmart from './assets/images/buel-smart.webp';
+import booki from './assets/images/Booki.webp';
+import bookiSmart from './assets/images/bookiSmart.webp';
+import nina from './assets/images/nina.webp';
+import ninaSmart from './assets/images/ninaSmart.webp';
 const logotext = "P.V";
 const meta = {
     title: "Pierrick Viarde",
@@ -61,6 +65,28 @@ const dataportfolio = [{
     responsive: "Desktop / Tablette / Smartphone",
     
     gitLink : "https://github.com/pierrick3773/Kasa.git"
+},
+
+{
+    id: 4,
+    title: "Booki",
+    captureDesktop: booki,
+    captureSmartphone: bookiSmart, 
+    description: "Projet d'étude réalisé avec Html et CSS. Réalisé pour travailler la mise en page et le responsive",
+    responsive: "Desktop / Tablette / Smartphone",
+    
+    gitLink : "https://github.com/pierrick3773/index_booki_version_finale.git"
+},
+
+{
+    id: 4,
+    title: "Nina Carducci",
+    captureDesktop: nina,
+    captureSmartphone: ninaSmart, 
+    description: "Projet d'étude réalisé avec JS et CSS. Réalisé pour travailler le SEO et le debugage",
+    responsive: "Desktop / Tablette / Smartphone",
+    
+    gitLink : "https://github.com/pierrick3773/index_booki_version_finale.git"
 },
    
 ];

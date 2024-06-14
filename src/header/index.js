@@ -17,9 +17,9 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
+        <a className="navbar-brand nav_ac" href="#home">
+          {logotext}
+        </a>
           <div className="d-flex align-items-center">
           <Themetoggle />
           <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -35,16 +35,16 @@ const Headermain = () => {
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                    <a href="#home" onClick={handleToggle} className="my-3">Home</a>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <a href="#portfolio" onClick={handleToggle} className="my-3">Portfolio</a>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                    <a href="#about" onClick={handleToggle} className="my-3">About</a>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                    <a href="#contact" onClick={handleToggle} className="my-3">Contact</a>
                   </li>
                 </ul>
               </div>
