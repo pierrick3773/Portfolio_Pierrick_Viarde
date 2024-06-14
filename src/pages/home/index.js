@@ -1,15 +1,11 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
+
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
-import { Link } from "react-router-dom";
-import {
-  dataabout,
-  worktimeline,
-  skills,
-} from "../../content_option";
+
+
 import { About } from "../about";
 import { Portfolio } from "../portfolio";
 import { ContactUs } from "../contact";
@@ -20,13 +16,7 @@ export const Home = () => {
   return (
     <HelmetProvider>
       <style>
-        {`
-          @media (max-width: 900px) {
-            .intro_sec {
-              background-image: url(${bgImageSmall});
-            }
-          }
-        `}
+      
       </style>
       <section id="home" className="home">
         <Helmet>
