@@ -1,7 +1,9 @@
 .col-lg-5{
     width: 100%;
 }
-
+svg {
+    max-width: fit-content;
+}
 section {
     flex: 1 0 auto;
     position: relative;
@@ -34,6 +36,17 @@ section {
     text-decoration: none;
 }
 
+
+@media (min-width: 990px) and (max-width: 1140px) {
+    .smartphone-container.start-animation {
+        display: none;
+    }
+    .Link-description {
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+    }
+}
 .intro_sec {
     height: calc(100vh - 60px);
     min-height: 700px;
@@ -50,6 +63,18 @@ section {
     .intro_sec {
         display: block;
         
+    }
+    .smartphone-container.start-animation {
+        display: grid ; 
+    }
+
+    .Link-description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav_ac{
+        display: none;
     }
 
 .mb-1x{
