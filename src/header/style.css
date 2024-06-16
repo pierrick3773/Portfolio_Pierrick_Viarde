@@ -195,9 +195,7 @@
     .the_menu .menu_item>a {
         font-size: 4.8vw;
     }
-    .site__navigation {
-        display: none;
-    }
+  
 }
 @media (max-width: 768px) {
     .site__navigation {

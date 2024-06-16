@@ -36,6 +36,9 @@ section {
     text-decoration: none;
 }
 
+.col-lg-7{
+    width: 100%;
+}
 
 @media (min-width: 990px) and (max-width: 1140px) {
     .smartphone-container.start-animation {

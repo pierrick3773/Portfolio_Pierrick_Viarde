@@ -27,8 +27,10 @@ const introdata = {
 
 const dataabout = {
     title: "à propos de moi",
-    aboutme: "J AIME PAS LES CONS ET JE SUIS INSOMNIAQUE ALORS JE REPOND A 3H DU MAT    !!!!!!!!!",
+    aboutme: "Je suis un Développeur Web Front-End junior passionné, spécialisé dans la création d'interfaces utilisateur conviviales et réactives. J'ai de bonnes connaissances dans les technologies front-end telles que HTML, CSS, JavaScript, avec une préférence pour React.<br /><br />Mon sens aiguisé du design me permet de transformer les maquettes en interfaces web fonctionnelles et visuellement attrayantes. Je suis également reconnu pour ma capacité à résoudre rapidement les problèmes de code, à optimiser le rendu des pages et à garantir une expérience utilisateur fluide.<br /><br />Je travaille efficacement en équipe, je communique clairement et je suis toujours prêt à apprendre de nouvelles technologies pour rester à jour dans ce domaine en constante évolution.",
 };
+
+
 
     
 
