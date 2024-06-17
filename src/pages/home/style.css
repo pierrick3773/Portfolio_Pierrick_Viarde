@@ -1,4 +1,62 @@
 /* Général */
+.fond-loader {
+    /*mise en place d'un faux fond blanc permettant le fondu  */
+    width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fond-loader 1s;/*durée de l'animation de fondu*/
+      animation-delay: 2.4s; /*delais avant le début de l'animation*/
+      animation-fill-mode: both; /*anti répétiton */
+      z-index: 99999; /*permet d'être visible au dessus de toute la page index (fond blanc)*/
+    }
+.loader {
+    position: relative;
+    animation: flix 3s ease-in infinite alternate;
+  }
+  .loader:before {
+    content: '';
+    display: block;
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #fff ;
+    background-image:
+      radial-gradient(circle 12px at 22px 22px, #e77d22 100%, transparent 0),
+      radial-gradient(circle 10px at 6px 40px, #e77d22 100%, transparent 0),
+      radial-gradient(circle 14px at 31px -6px, #e77d22 100%, transparent 0),
+      radial-gradient(circle 5px at 40px 30px, #e77d22 100%, transparent 0);
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+  }
+
+  .loader:after {
+      content: '';
+      position: absolute;
+      top: 0%;
+      transform: translate(-50% , -100%);
+      left: 50%;
+      width: 24px;
+      height: 12px;
+      background: #fff;
+      border-radius: 50px 50px 0 0;
+    }
+    @keyframes fond-loader{
+        100%{
+            opacity: 0;
+            z-index: -1;/*animation qui permet le fondu vers la page index */
+        }
+    }
+  @keyframes flix {
+    0%  , 60% { transform: rotate(-10deg)}
+    100%  , 30% , 80% { transform: rotate(5deg)}
+  }
+  @keyframes rotate {
+    100%   { transform: rotate(360deg)}
+  }
 .col-lg-5,
 .col-lg-7 {
   width: 100%;

@@ -1,11 +1,8 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
-
-
 import { About } from "../about";
 import { Portfolio } from "../portfolio";
 import { ContactUs } from "../contact";
@@ -15,15 +12,15 @@ import bgImageSmall from "../../assets/images/fotor-ai-2024052192112.jpg";
 export const Home = () => {
   return (
     <HelmetProvider>
-      <style>
-      
-      </style>
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
+        <div className="fond-loader">
+      <span className="loader"></span>
+    </div>
         <div
           className="intro_sec d-block d-lg-flex align-items-center"
           style={{
@@ -32,7 +29,6 @@ export const Home = () => {
             backgroundRepeat: 'round'
           }}
         >
-        
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
@@ -75,13 +71,13 @@ export const Home = () => {
           </div>
         </div>
         <div id="about">
-        <About />
+          <About />
         </div>
         <div id="portfolio">
-        <Portfolio />
+          <Portfolio />
         </div>
         <div id="contact">
-        <ContactUs />
+          <ContactUs />
         </div>
       </section>
     </HelmetProvider>
