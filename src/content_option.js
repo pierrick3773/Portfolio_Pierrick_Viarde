@@ -86,7 +86,7 @@ const dataportfolio = [{
     captureDesktop: nina,
     captureSmartphone: ninaSmart, 
     description: "Projet d'étude réalisé avec JS et CSS. Réalisé pour travailler le SEO et le debugage",
-    responsive: "Desktop / Tablette / Smartphone",
+    responsive: "Desktop / Smartphone",
     
     gitLink : "https://github.com/pierrick3773/index_booki_version_finale.git"
 },

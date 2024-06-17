@@ -93,10 +93,34 @@
 .service-section .service-category-title {
     padding-bottom: 4px;
 }
-
-
+.presentation{
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px #e77d22, 0 2px 4px -1px #e77d22;
+    overflow: hidden;
+    width: 85%;
+    background-color: #1a1a1a;
+    animation: float 2s ease-in-out infinite;
+}
+.presentation-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*! CSS Used keyframes */
-
+@keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+  }
 @-webkit-keyframes fadeInUp {
     0% {
         opacity: 0;
