@@ -39,7 +39,7 @@ function Skills() {
             <h3>Javascript</h3>
           </div>
           <div className="skill--box" >
-            <ViteSvgImage className="skill--icon" />
+            <ReactSvgImage className="skill--icon" />
             <h3>ViteJS</h3>
           </div>
           <div className="skill--box" >
