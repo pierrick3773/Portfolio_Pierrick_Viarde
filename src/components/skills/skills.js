@@ -8,7 +8,7 @@ import { ReactComponent as HtmlSvgImage } from '../../assets/skills_img/html.svg
 import { ReactComponent as JsSvgImage } from '../../assets/skills_img/javascript.svg';
 import { ReactComponent as MongoSvgImage } from '../../assets/skills_img/mongoDB.svg';
 import { ReactComponent as PhotoshopSvgImage } from '../../assets/skills_img/photoshop.svg';
-import { ReactComponent as ViteSvgImage } from '../../assets/skills_img/vitejs.svg';
+import { ReactComponent as ViteSvgImage } from '../../assets/skills_img/Vite.js.svg';
 import { ReactComponent as ReactSvgImage } from '../../assets/skills_img/react.svg';
 import { ReactComponent as SassSvgImage } from '../../assets/skills_img/sass.svg';
 import './skills.css'
