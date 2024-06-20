@@ -40,8 +40,8 @@ function Skills() {
             <h3>Javascript</h3>
           </div>
           <div className="skill--box" >
-            <ViteSvgImage className="skill--icon" />
-            <h3>ViteJS</h3>
+              <MongoSvgImage className="skill--icon" />
+              <h3>MongoDB</h3>
           </div>
           <div className="skill--box" >
             <ReactSvgImage className="skill--icon" />
@@ -96,10 +96,6 @@ function Skills() {
               <div className="skill--box" >
                 <PhotoshopSvgImage className="skill--icon" />
                 <h3>Photoshop</h3>
-              </div>
-              <div className="skill--box" >
-                <ViteSvgImage className="skill--icon" />
-                <h3>ViteJS</h3>
               </div>
               <div className="skill--box" >
                 <ReactSvgImage className="skill--icon" />
