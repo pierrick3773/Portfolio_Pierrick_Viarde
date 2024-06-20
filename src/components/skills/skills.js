@@ -11,6 +11,7 @@ import { ReactComponent as PhotoshopSvgImage } from '../../assets/skills_img/pho
 import { ReactComponent as ViteSvgImage } from '../../assets/skills_img/Vite.js.svg';
 import { ReactComponent as ReactSvgImage } from '../../assets/skills_img/react.svg';
 import { ReactComponent as SassSvgImage } from '../../assets/skills_img/sass.svg';
+import { ReactComponent as viteSvgImage2 } from '../../assets/skills_img/vitejs.svg';
 import './skills.css'
 
 function Skills() {
@@ -39,7 +40,7 @@ function Skills() {
             <h3>Javascript</h3>
           </div>
           <div className="skill--box" >
-            <ReactSvgImage className="skill--icon" />
+            <ViteSvgImage className="skill--icon" />
             <h3>ViteJS</h3>
           </div>
           <div className="skill--box" >
