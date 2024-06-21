@@ -11,7 +11,7 @@ import ninaSmart from './assets/images/ninaSmart.webp';
 const logotext = "P.V";
 const meta = {
     title: "Pierrick Viarde",
-    description: "Bonjourn Pierrick Viarde développeur web frontend",
+    description: "Bonjour Pierrick Viarde développeur web frontend",
 };
 
 const introdata = {
