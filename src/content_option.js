@@ -60,13 +60,13 @@ const dataportfolio = [{
 },
 {
     id: 3,
-    title: "Sophie Buel",
+    title: "Sophie Bluel",
     captureDesktop: buel,
     captureSmartphone: buelSmart, 
     description: "Projet d'étude réalisé avec JavaScript et CSS. Réalisé pour travailler sur JavaScript et la communication avec le Backend.",
     responsive: "Desktop / Tablette / Smartphone",
     
-    gitLink : "https://github.com/pierrick3773/Kasa.git"
+    gitLink : "https://github.com/pierrick3773/Portfolio-architecte-sophie-bluel-master.git"
 },
 
 {
@@ -81,7 +81,7 @@ const dataportfolio = [{
 },
 
 {
-    id: 4,
+    id: 5,
     title: "Nina Carducci",
     captureDesktop: nina,
     captureSmartphone: ninaSmart, 
